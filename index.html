@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav class="container" aria-label="Primary navigation">
+    <div class="logo" tabindex="0">MyPortfolio</div>
+    <div class="nav-links" role="menubar">
+      <a href="#about" role="menuitem" tabindex="0">About</a>
+      <a href="#skills" role="menuitem" tabindex="0">Skills</a>
+      <a href="#projects" role="menuitem" tabindex="0">Projects</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-label="Introduction">
+    <div class="container">
+      <h1>Hi, I'm Anugya Jain</h1>
+      <p class="subtext"> CS student focused on AI/ML & Web Dev | Building impactful software.</p>
+      <a href="#projects" class="btn-primary" role="button" tabindex="0">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-title">
+    <h2 class="section-title" id="about-title">About Me</h2>
+    <p>
+       Computer Science Engineering student specializing in Artificial Intelligence, Machine Learning, and Full-Stack Web Development. 
+       Passionate about designing and deploying scalable software solutions that leverage cutting-edge technologies to solve real-world problems. 
+       Strong foundation in algorithms, data-driven development, and system design, complemented by hands-on project experience. 
+       Committed to continuous learning, collaboration, and innovation to deliver measurable impact through technology.
+    </p>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-title">
+    <h2 class="section-title" id="skills-title">Skills</h2>
+    <div class="skills-grid" role="list">
+      <div class="skill-card" role="listitem" tabindex="0">HTML</div>
+      <div class="skill-card" role="listitem" tabindex="0">CSS</div>
+      <div class="skill-card" role="listitem" tabindex="0">JavaScript</div>
+      <div class="skill-card" role="listitem" tabindex="0">React</div>
+      <div class="skill-card" role="listitem" tabindex="0">MySql</div>
+      <div class="skill-card" role="listitem" tabindex="0">Python</div>
+      <div class="skill-card" role="listitem" tabindex="0">Git & GitHub</div>
+      <div class="skill-card" role="listitem" tabindex="0">REST APIs</div>
+      <div class="skill-card" role="listitem" tabindex="0">C</div>
+      <div class="skill-card" role="listitem" tabindex="0">C++</div>
+      <div class="skill-card" role="listitem" tabindex="0">OpenCV</div>
+      <div class="skill-card" role="listitem" tabindex="0">Deep Learning (YOLOv4)</div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="Currency Detector">
+    <h2 class="section-title" id="projects-title">Projects</h2>
+    <div class="projects-grid" role="list">
+      <article class="project-card" role="listitem" tabindex="0">
+        <img class="project-image" src="currency converter.png" alt="Project 1 screenshot" />
+        <div class="project-content">
+          <h3 class="project-title">Currency Converter</h3>
+          <p class="project-description">Developed a responsive web application that allows users to convert currency values between different countries
+            in real time. Utilized a public exchange rate API to fetch dynamic currency rates with EUR as the base currency.
+            Integrated country flag detection using the FlagsAPI for visual enhancement. Implemented input validation,
+            dropdown-based currency selection, and automatic exchange rate updates on load and form submission.
+            Tech Stack: HTML, CSS, JavaScript, REST API (Currency API), FlagsAPI</p>
+          <a href="https://github.com/Anugyajain27/currency-convertor" target="_blank" class="project-link" tabindex="0" aria-label="View Portfolio Website project">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem" tabindex="0">
+        <img class="project-image" src="object detection.png" alt="Project 2 screenshot" />
+        <div class="project-content">
+          <h3 class="project-title">REAL-TIME OBJECT DETECTION WITH AUDIO FEEDBACK</h3>
+          <p class="project-description"> Developed a real-time object detection system using YOLO (You Only Look Once) v4 and OpenCV, integrated
+            with a text-to-speech (TTS) engine to provide verbal feedback. The application processes live video from a
+            webcam, detects objects, and announces them audibly to assist visually impaired individuals.
+            Tech Stack: Python (OpenCV, NumPy, pyttsx3), YOLOv4 (Deep Learning Model for Object Detection), Computer
+            Vision (Image Processing with OpenCV).</p>
+          <a href="https://github.com/Anugyajain27/-REAL-TIME-OBJECT-DETECTION-WITH-AUDIO-FEEDBACK" target="_blank" class="project-link" tabindex="0" aria-label="View Task Manager App project">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-card" role="listitem" tabindex="0">
+        <img class="project-image" src="solar system.png" alt="Project 3 screenshot" />
+        <div class="project-content">
+          <h3 class="project-title">Solar System</h3>
+          <p class="project-description">Developed an interactive 3D solar system using React and Three.js, showcasing real-time planetary motion, orbit visualization, and speed control sliders for each planet. 
+            Implemented dynamic rendering, texture mapping, tooltips on hover, dark/light mode toggle, and Saturn’s ring system for added realism.
+            Tech Stack : React, Three.js, Vite, JavaScript, HTML/CSS</p>
+          <a href="https://github.com/Anugyajain27/3D-Solor-system" target="_blank" class="project-link" tabindex="0" aria-label="View Weather Dashboard project">View Project</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container" role="contentinfo">
+    <p>© 2025 Anugya jain. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/anugya-jain-21744b290 " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a> 
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Contact form basic handler to prevent page reload and give an alert confirmation
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
