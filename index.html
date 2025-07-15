@@ -3,147 +3,489 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Portfolio</title>
+<title>Anugya Jain - Portfolio</title>
 <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <header>
   <nav class="container" aria-label="Primary navigation">
-    <div class="logo" tabindex="0">MyPortfolio</div>
+    <div class="logo" tabindex="0">
+      <span class="logo-text">Anugya</span>
+      <span class="logo-accent">.</span>
+    </div>
     <div class="nav-links" role="menubar">
       <a href="#about" role="menuitem" tabindex="0">About</a>
       <a href="#skills" role="menuitem" tabindex="0">Skills</a>
       <a href="#projects" role="menuitem" tabindex="0">Projects</a>
+      <a href="#contact" role="menuitem" tabindex="0">Contact</a>
+    </div>
+    <div class="mobile-menu-toggle" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </nav>
 </header>
 
 <main>
   <section class="hero" aria-label="Introduction">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </div>
     <div class="container">
-      <h1>Hi, I'm Anugya Jain</h1>
-      <p class="subtext"> CS student focused on AI/ML & Web Dev | Building impactful software.</p>
-      <a href="#projects" class="btn-primary" role="button" tabindex="0">View My Work</a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="greeting">
+            <span class="wave">👋</span>
+            <span>Hello, I'm</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="name-highlight">Anugya Jain</span>
+          </h1>
+          <p class="hero-subtitle">CS Student & AI/ML Enthusiast</p>
+          <p class="hero-description">
+            Building impactful software solutions with cutting-edge technologies
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary" role="button" tabindex="0">
+              <i class="fas fa-code"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn-secondary" role="button" tabindex="0">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="profile img.jpg" alt="Anugya Jain" class="profile-image" />
+            <div class="image-border"></div>
+            <div class="image-glow"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="about" class="about" aria-labelledby="about-title">
-    <h2 class="section-title" id="about-title">About Me</h2>
-    <p>
-       Computer Science Engineering student specializing in Artificial Intelligence, Machine Learning, and Full-Stack Web Development. 
-       Passionate about designing and deploying scalable software solutions that leverage cutting-edge technologies to solve real-world problems. 
-       Strong foundation in algorithms, data-driven development, and system design, complemented by hands-on project experience. 
-       Committed to continuous learning, collaboration, and innovation to deliver measurable impact through technology.
-    </p>
+    <div class="container">
+      <h2 class="section-title" id="about-title">
+        <span class="title-accent">About</span> Me
+      </h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a passionate Computer Science Engineering student specializing in Artificial Intelligence, 
+            Machine Learning, and Full-Stack Web Development.
+          </p>
+          <p>
+            With a strong foundation in algorithms, data-driven development, and system design, 
+            I focus on creating scalable software solutions that leverage cutting-edge technologies 
+            to solve real-world problems.
+          </p>
+          <p>
+            I'm committed to continuous learning, collaboration, and innovation to deliver 
+            measurable impact through technology.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedication</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-container">
+            <img src="undraw_programmer_raqr.png" alt="Anugya working on code" class="about-photo" />
+            <div class="tech-icons">
+              <i class="fab fa-react"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="skills" aria-labelledby="skills-title">
-    <h2 class="section-title" id="skills-title">Skills</h2>
-    <div class="skills-grid" role="list">
-      <div class="skill-card" role="listitem" tabindex="0">HTML</div>
-      <div class="skill-card" role="listitem" tabindex="0">CSS</div>
-      <div class="skill-card" role="listitem" tabindex="0">JavaScript</div>
-      <div class="skill-card" role="listitem" tabindex="0">React</div>
-      <div class="skill-card" role="listitem" tabindex="0">MySql</div>
-      <div class="skill-card" role="listitem" tabindex="0">Python</div>
-      <div class="skill-card" role="listitem" tabindex="0">Git & GitHub</div>
-      <div class="skill-card" role="listitem" tabindex="0">REST APIs</div>
-      <div class="skill-card" role="listitem" tabindex="0">C</div>
-      <div class="skill-card" role="listitem" tabindex="0">C++</div>
-      <div class="skill-card" role="listitem" tabindex="0">OpenCV</div>
-      <div class="skill-card" role="listitem" tabindex="0">Deep Learning (YOLOv4)</div>
+  <div class="container">
+    <h2 class="section-title" id="skills-title">
+      <span class="title-accent">Skills</span> & Technologies
+    </h2>
+    <div class="skills-categories">
+
+      <!-- Frontend -->
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-code"></i> Frontend
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
+          <div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-server"></i> Backend
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+          <div class="skill-card"><i class="fas fa-plug"></i><span>REST APIs</span></div>
+          <div class="skill-card"><i class="fas fa-code"></i><span>C++</span></div>
+          <div class="skill-card"><i class="fas fa-fire"></i><span>Flask</span></div>
+        </div>
+      </div>
+
+      <!-- AI/ML -->
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-brain"></i> AI / ML
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fas fa-robot"></i><span>Machine Learning</span></div>
+          <div class="skill-card"><i class="fas fa-brain"></i><span>Deep Learning</span></div>
+          <div class="skill-card"><i class="fas fa-eye"></i><span>OpenCV</span></div>
+          <div class="skill-card"><i class="fas fa-search"></i><span>YOLOv4</span></div>
+          <div class="skill-card"><i class="fas fa-cogs"></i><span>TensorFlow</span></div>
+          <div class="skill-card"><i class="fas fa-cube"></i><span>PyTorch</span></div>
+          <div class="skill-card"><i class="fas fa-chart-line"></i><span>Scikit-learn</span></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-category">
+        <h3 class="category-title">
+          <i class="fas fa-wrench"></i> Tools & IDEs
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+          <div class="skill-card"><i class="fas fa-code"></i><span>VS Code</span></div>
+          <div class="skill-card"><i class="fas fa-vial"></i><span>Postman</span></div>
+          <div class="skill-card"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <h2 class="section-title" id="projects-title">
+        Featured <span class="title-accent">Projects</span>
+      </h2>
+      <div class="projects-grid">
+        <article class="project-card" data-category="web">
+          <div class="project-image-container">
+            <img class="project-image" src="currency converter.png" alt="Currency Converter screenshot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Anugyajain27/currency-convertor" target="_blank" class="project-link-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category-tag">Web Development</div>
+            <h3 class="project-title">Currency Converter</h3>
+            <p class="project-description">
+              A responsive web application for real-time currency conversion between different countries. 
+              Features dynamic exchange rates, country flag detection, and input validation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ai">
+          <div class="project-image-container">
+            <img class="project-image" src="object detection.png" alt="Object Detection screenshot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Anugyajain27/-REAL-TIME-OBJECT-DETECTION-WITH-AUDIO-FEEDBACK" target="_blank" class="project-link-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category-tag">AI/ML</div>
+            <h3 class="project-title">Real-Time Object Detection</h3>
+            <p class="project-description">
+              An AI-powered system using YOLOv4 for real-time object detection with audio feedback, 
+              designed to assist visually impaired individuals.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">YOLOv4</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">TTS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-image-container">
+            <img class="project-image" src="solar system.png" alt="Solar System screenshot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Anugyajain27/3D-Solor-system" target="_blank" class="project-link-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category-tag">3D Development</div>
+            <h3 class="project-title">Interactive Solar System</h3>
+            <p class="project-description">
+              A 3D interactive solar system built with React and Three.js, featuring real-time planetary motion, 
+              orbit visualization, and dynamic controls.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">3D Graphics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-image-container">
+            <img class="project-image" src="CINEVERSE.png" alt="CineVerse screenshot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Anugyajain27/CineVerse-movie-recommender-system" target="_blank" class="project-link-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category-tag">Full Stack</div>
+            <h3 class="project-title">CineVerse - Movie Recommender</h3>
+            <p class="project-description">
+              A full-stack movie recommendation system with intelligent genre-based filtering, 
+              cinematic UI, and detailed movie information modals.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-image-container">
+            <img class="project-image" src="Weather Forecast Web App.png" alt="Weather App screenshot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Anugyajain27/-Weather-Forecast-Web-App" target="_blank" class="project-link-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link-icon">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category-tag">React App</div>
+            <h3 class="project-title">Weather Forecast App</h3>
+            <p class="project-description">
+              A dynamic weather forecasting application with real-time data from OpenWeatherMap API, 
+              featuring responsive design and intuitive user interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">API Integration</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="projects" aria-labelledby="Currency Detector">
-    <h2 class="section-title" id="projects-title">Projects</h2>
-    <div class="projects-grid" role="list">
-      <article class="project-card" role="listitem" tabindex="0">
-        <img class="project-image" src="currency converter.png" alt="Project 1 screenshot" />
-        <div class="project-content">
-          <h3 class="project-title">Currency Converter</h3>
-          <p class="project-description">Developed a responsive web application that allows users to convert currency values between different countries
-            in real time. Utilized a public exchange rate API to fetch dynamic currency rates with EUR as the base currency.
-            Integrated country flag detection using the FlagsAPI for visual enhancement. Implemented input validation,
-            dropdown-based currency selection, and automatic exchange rate updates on load and form submission.
-            Tech Stack: HTML, CSS, JavaScript, REST API (Currency API), FlagsAPI</p>
-          <a href="https://github.com/Anugyajain27/currency-convertor" target="_blank" class="project-link" tabindex="0" aria-label="View Portfolio Website project">View Project</a>
+  <section id="contact" class="contact-section" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">
+        Get In <span class="title-accent">Touch</span>
+      </h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-text">
+            <p>
+              I'm always open to discussing new opportunities, collaborations, or just having a chat about technology!
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>ANUGYA.23FE10CAI00402@muj.manipal.edu</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-linkedin"></i>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <p>Connect with me professionally</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>Check out my code</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="project-card" role="listitem" tabindex="0">
-        <img class="project-image" src="object detection.png" alt="Project 2 screenshot" />
-        <div class="project-content">
-          <h3 class="project-title">REAL-TIME OBJECT DETECTION WITH AUDIO FEEDBACK</h3>
-          <p class="project-description"> Developed a real-time object detection system using YOLO (You Only Look Once) v4 and OpenCV, integrated
-            with a text-to-speech (TTS) engine to provide verbal feedback. The application processes live video from a
-            webcam, detects objects, and announces them audibly to assist visually impaired individuals.
-            Tech Stack: Python (OpenCV, NumPy, pyttsx3), YOLOv4 (Deep Learning Model for Object Detection), Computer
-            Vision (Image Processing with OpenCV).</p>
-          <a href="https://github.com/Anugyajain27/-REAL-TIME-OBJECT-DETECTION-WITH-AUDIO-FEEDBACK" target="_blank" class="project-link" tabindex="0" aria-label="View Task Manager App project">View Project</a>
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
         </div>
-      </article>
-
-      <article class="project-card" role="listitem" tabindex="0">
-        <img class="project-image" src="solar system.png" alt="Project 3 screenshot" />
-        <div class="project-content">
-          <h3 class="project-title">Solar System</h3>
-          <p class="project-description">Developed an interactive 3D solar system using React and Three.js, showcasing real-time planetary motion, orbit visualization, and speed control sliders for each planet. 
-            Implemented dynamic rendering, texture mapping, tooltips on hover, dark/light mode toggle, and Saturn’s ring system for added realism.
-            Tech Stack : React, Three.js, Vite, JavaScript, HTML/CSS</p>
-          <a href="https://github.com/Anugyajain27/3D-Solor-system" target="_blank" class="project-link" tabindex="0" aria-label="View Weather Dashboard project">View Project</a>
-        </div>
-      </article>
-
-      <article class="project-card" role="listitem" tabindex="0">
-        <img class="project-image" src="CINEVERSE.png" alt="Project 4 screenshot" />
-        <div class="project-content">
-          <h3 class="project-title">CineVerse-Movie Recommendation System</h3>
-          <p class="project-description"> CineVerse is a full-stack movie recommendation web application that allows users to search for movies based on
-          their preferred genre and explore curated movie suggestions. It features a cinematic splash screen, a user-friendly
-          interface, dynamic movie display with poster previews, and an interactive modal popup that shows detailed movie
-          information including IMDb link, rating, duration, and genre. The backend serves intelligent recommendations
-          using genre filtering from a pre-populated movie database.
-          Tech Stack: HTML, CSS, JavaScript (Frontend), Flask (Backend), MySQL (Database), Pandas & scikit-learn
-          (Recommendation), Fetch API (AJAX)</p>
-          <a href="https://github.com/Anugyajain27/CineVerse-movie-recommender-system" target="_blank" class="project-link" tabindex="0" aria-label="View Weather Dashboard project">View Project</a>
-        </div>
-      </article>
-
-      <article class="project-card" role="listitem" tabindex="0">
-        <img class="project-image" src="Weather Forecast Web App.png" alt="Project 5 screenshot" />
-        <div class="project-content">
-          <h3 class="project-title"> Weather Forecast Web App</h3>
-          <p class="project-description"> Built a dynamic weather forecasting web application using React.js and the OpenWeatherMap API. 
-          The app allows users to enter a city name and retrieve real-time weather information, including temperature and weather conditions, through RESTful API integration. 
-          Implemented React hooks (useState) for state management and handled asynchronous data fetching with fetch(). Ensured user-friendly interaction by preventing page reloads on form submission and displaying results dynamically.
-          Tech Stack: React.js, JavaScript, HTML, CSS, OpenWeatherMap API, REST API</p>
-          <a href="https://github.com/Anugyajain27/-Weather-Forecast-Web-App" target="_blank" class="project-link" tabindex="0" aria-label="View Weather Dashboard project">View Project</a>
-        </div>
-      </article>
+      </div>
     </div>
   </section>
-
 </main>
 
 <footer>
-  <div class="container" role="contentinfo">
-    <p>© 2025 Anugya jain. All rights reserved.</p>
-    <p>
-      <a href="https://www.linkedin.com/in/anugya-jain-21744b290 " target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a> 
-    </p>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>&copy; 2025 Anugya Jain. All rights reserved.</p>
+        <p>Built with ❤️ and lots of ☕</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/anugya-jain-21744b290/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Anugyajain27" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:ANUGYA.23FE10CAI00402@muj.manipal.edu">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 
 <script>
-  // Contact form basic handler to prevent page reload and give an alert confirmation
-  document.querySelector('form').addEventListener('submit', function(e) {
+  // Contact form handler
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
+    
+    // Get form elements
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Simple validation
+    if (name && email && message) {
+      // Show success message
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    } else {
+      alert('Please fill in all fields.');
+    }
+  });
+
+  // Mobile menu toggle
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Add scroll effect to header
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
   });
 </script>
-<script src="script.js"></script>
 </body>
 </html>
-
