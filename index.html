@@ -144,7 +144,7 @@
             <div class="timeline-header">
               <h3 class="timeline-title">Web Development Intern</h3>
               <span class="timeline-company">NullClass Pvt. Ltd. (Remote)</span>
-              <span class="timeline-date">Aug 2025 – Oct 2025</span>
+              <span class="timeline-date">Aug 2025 – Present</span>
             </div>
             <p class="timeline-description">
               Integrating dynamic backend with a responsive frontend, ensuring smooth user experience 
@@ -210,7 +210,6 @@
       </h2>
       <div class="skills-categories">
 
-        <!-- Programming Languages -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-code"></i> Programming Languages
@@ -224,7 +223,6 @@
           </div>
         </div>
 
-        <!-- Frontend -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-paint-brush"></i> Frontend
@@ -238,7 +236,6 @@
           </div>
         </div>
 
-        <!-- Backend -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-server"></i> Backend
@@ -250,7 +247,6 @@
           </div>
         </div>
 
-        <!-- Databases -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-database"></i> Databases
@@ -261,7 +257,6 @@
           </div>
         </div>
 
-        <!-- AI/ML -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-brain"></i> AI / ML
@@ -279,7 +274,6 @@
           </div>
         </div>
 
-        <!-- Tools -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-wrench"></i> Tools & IDEs
@@ -292,7 +286,6 @@
           </div>
         </div>
 
-        <!-- Other Skills -->
         <div class="skill-category">
           <h3 class="category-title">
             <i class="fas fa-plus"></i> Other Skills
@@ -323,9 +316,6 @@
                 <a href="https://github.com/Anugyajain27/currency-convertor" target="_blank" class="project-link-icon">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="project-link-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -352,9 +342,6 @@
               <div class="project-links">
                 <a href="https://github.com/Anugyajain27/-REAL-TIME-OBJECT-DETECTION-WITH-AUDIO-FEEDBACK" target="_blank" class="project-link-icon">
                   <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link-icon">
-                  <i class="fas fa-external-link-alt"></i>
                 </a>
               </div>
             </div>
@@ -383,9 +370,6 @@
                 <a href="https://github.com/Anugyajain27/3D-Solor-system" target="_blank" class="project-link-icon">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="project-link-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -413,9 +397,6 @@
                 <a href="https://github.com/Anugyajain27/CineVerse-movie-recommender-system" target="_blank" class="project-link-icon">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="project-link-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
             </div>
           </div>
@@ -442,9 +423,6 @@
               <div class="project-links">
                 <a href="https://github.com/Anugyajain27/-Weather-Forecast-Web-App" target="_blank" class="project-link-icon">
                   <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="project-link-icon">
-                  <i class="fas fa-external-link-alt"></i>
                 </a>
               </div>
             </div>
@@ -684,7 +662,6 @@
   </section>
 </main>
 
-<!-- Certificate Modal -->
 <div id="certificateModal" class="certificate-modal">
   <div class="certificate-modal-content">
     <div class="certificate-modal-header">
@@ -728,7 +705,6 @@
 </footer>
 
 <script>
-  // Certificate Modal Functions
   let currentCertificateImage = '';
 
   function openCertificateModal(imageSrc, title) {
@@ -744,7 +720,6 @@
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     
-    // Add fade in animation
     setTimeout(() => {
       modal.classList.add('show');
     }, 10);
@@ -769,7 +744,6 @@
     document.body.removeChild(link);
   }
 
-  // Close modal when clicking outside
   window.addEventListener('click', function(event) {
     const modal = document.getElementById('certificateModal');
     if (event.target === modal) {
@@ -777,7 +751,6 @@
     }
   });
 
-  // Close modal with Escape key
   window.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       const modal = document.getElementById('certificateModal');
@@ -787,12 +760,10 @@
     }
   });
 
-  // Theme toggle functionality
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   const themeIcon = themeToggle.querySelector('i');
 
-  // Check for saved theme preference or default to light mode
   const savedTheme = localStorage.getItem('theme') || 'light';
   body.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
@@ -814,7 +785,6 @@
     }
   }
 
-  // Mobile menu toggle
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -823,7 +793,6 @@
     mobileMenuToggle.classList.toggle('active');
   });
 
-  // Smooth scrolling for navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -833,14 +802,12 @@
           behavior: 'smooth',
           block: 'start'
         });
-        // Close mobile menu if open
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
       }
     });
   });
 
-  // Contact form submission
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -862,7 +829,6 @@
     });
   });
 
-  // Intersection Observer for animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -876,7 +842,6 @@
     });
   }, observerOptions);
 
-  // Observe elements for animation
   document.querySelectorAll('.timeline-item, .skill-category, .project-card, .certificate-card').forEach(el => {
     observer.observe(el);
   });
